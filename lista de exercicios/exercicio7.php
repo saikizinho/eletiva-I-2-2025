@@ -10,11 +10,11 @@
 
 <body>
     <div class="container">
-        <h1>Exemplo - Conversão de temperatura celsius para fahrenheit</h1>
+        <h1>Exemplo - Conversão de temperatura de farenheit para celsius</h1>
         <form method="post">
             <form method="post">
                 <div class="mb-3">
-                    <label for="valor1" class="form-label">Informe a temperatura em ºC</label>
+                    <label for="valor1" class="form-label">Informe a temperatura em ºF</label>
                     <input type="number" id="valor1" name="valor1" class="form-control" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
@@ -24,9 +24,9 @@
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $valor1 = $_POST['valor1'];
 
-                $fahrenheit = ($valor1 * 9 / 5) + 32;
+                $celsius = ($valor1 - 32) * 5 / 9;
 
-                echo "<p>$valor1 °C é igual a $fahrenheit °F</p>";
+                echo "<p>$valor1 °F é igual a $celsius °C</p>";
             }
             ?>
 
