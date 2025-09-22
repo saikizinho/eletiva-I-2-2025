@@ -29,6 +29,10 @@
                             <li><a class="dropdown-item" href="exercicio4.php">Exercício 4</a></li>
                             <li><a class="dropdown-item" href="exercicio5.php">Exercício 5</a></li>
                             <li><a class="dropdown-item" href="exercicio6.php">Exercício 6</a></li>
+                            <li><a class="dropdown-item" href="exercicio7.php">Exercício 7</a></li>
+                            <li><a class="dropdown-item" href="exercicio8.php">Exercício 8</a></li>
+                            <li><a class="dropdown-item" href="exercicio9.php">Exercício 9</a></li>
+                            <li><a class="dropdown-item" href="exercicio10.php">Exercício 10</a></li>
                         </ul>
             </div>
         </div>

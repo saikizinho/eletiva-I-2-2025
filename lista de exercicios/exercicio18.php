@@ -17,11 +17,11 @@
                 <input type="number" id="capital" name="capital" class="form-control" required="">
             </div>
             <div class="mb-3">
-                <label for="taxa de juros" class="form-label">taxa de juros</label>
-                <input type="number" id="taxa de juros" name="taxa de juros" class="form-control" required="">
+                <label for="taxa de juros" class="form-label">taxa de juros (mensal)</label>
+                <input type="number" id="taxa de juros" name="taxa_de_juros" class="form-control" required="">
             </div>
             <div class="mb-3">
-                <label for="periodo" class="form-label">periodo</label>
+                <label for="periodo" class="form-label">periodo (meses)</label>
                 <input type="number" id="periodo" name="periodo" class="form-control" required="">
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
@@ -30,15 +30,20 @@
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $capital = $_POST['capital'];
-            $taxa = $_POST['taxa de juros'];
+            $taxa = $_POST['taxa_de_juros'];
             $periodo = $_POST['periodo'];
-            $juros = $capital * (1 + $taxa / 100) * $periodo;
-            echo "<p>o montante do capital $capital, com taxa de juros de $taxa % ao mês, no período de $periodo meses é de : $juros </p>";
+            $juros = $capital * (1 + $taxa / 100) ** $periodo;
+
+            $capital_formatado = number_format($capital, 2, ',', '.');
+            $taxa_formatada = number_format($taxa, 2, ',', '.');
+            $juros_formatado = number_format($juros, 2, ',', '.');
+
+            echo "<p>O montante do capital R$ $capital_formatado, com taxa de juros de $taxa_formatada% ao mês, no período de $periodo meses é de: R$ $juros_formatado</p>";
         }
-        // -  * x**y x/y x//y x%y x<y x>y x<=y x>=y x==y x!=y 
         ?>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     </div>
 </body>
 
