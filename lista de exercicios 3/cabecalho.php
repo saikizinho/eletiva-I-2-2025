@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lista exercicio 2</title>
+    <title>Lista exercicio 3</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">Lista exercicio 2</a>
+            <a class="navbar-brand" href="#">Lista exercicio 3</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,7 +20,7 @@
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Lista exercicio 2
+                            Lista exercicio 3
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown1">
                             <li><a class="dropdown-item" href="exercicio1.php">Exercício 1</a></li>
@@ -29,6 +29,11 @@
                             <li><a class="dropdown-item" href="exercicio4.php">Exercício 4</a></li>
                             <li><a class="dropdown-item" href="exercicio5.php">Exercício 5</a></li>
                             <li><a class="dropdown-item" href="exercicio6.php">Exercício 6</a></li>
+                            <li><a class="dropdown-item" href="exercicio7.php">Exercício 7</a></li>
+                            <li><a class="dropdown-item" href="exercicio8.php">Exercício 8</a></li>
+                            <li><a class="dropdown-item" href="exercicio9.php">Exercício 9</a></li>
+                            <li><a class="dropdown-item" href="exercicio10.php">Exercício 10</a></li>
+
                         </ul>
             </div>
         </div>
